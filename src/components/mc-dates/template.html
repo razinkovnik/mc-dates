@@ -1,0 +1,27 @@
+<div class="mc-dates">
+    <div class="mc-dates-container">
+        <div class="mc-dates-container-input">
+            <div><span>с</span></div>
+            <div>
+                <md-datepicker ng-model="$ctrl.dateFrom" md-hide-icons="calendar" md-placeholder="Введите дату"
+                    md-max-date="$ctrl.maxDate" ng-model-options="{ getterSetter: true }" ng-change="$ctrl.onChange()">
+                </md-datepicker>
+            </div>
+        </div>
+        <div class="mc-dates-container-input">
+            <div><span>по</span></div>
+            <div>
+                <md-datepicker ng-model="$ctrl.dateTo" md-hide-icons="calendar" md-placeholder="Введите дату"
+                    md-min-date="$ctrl.minDate" ng-model-options="{ getterSetter: true }" ng-change="$ctrl.onChange()"
+                    ng-required="false"></md-datepicker>
+            </div>
+        </div>
+    </div>
+    <div class="mc-dates-selectors">
+        <a role="button" ng-click="$ctrl.yesterday()">Вчера</a>
+        <a role="button" ng-click="$ctrl.today()">Сегодня</a>
+        <a role="button" ng-click="$ctrl.twoWeek()">2 недели</a>
+        <a role="button" ng-click="$ctrl.month()">Месяц</a>
+        <a role="button" ng-click="$ctrl.all()">Все</a>
+    </div>
+</div>

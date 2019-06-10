@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="dist/main.css" rel="stylesheet" />
+    <style>
+        [ng-cloak] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body ng-cloak>
+    <div class="container" ng-controller="AppCtrl as ctrl">
+        <div class="mcdates">
+            <mc-dates date-from="ctrl.date1" date-to="ctrl.date2" mc-change="ctrl.changeDates()"></mc-dates>
+        </div>
+        <md-input-container>
+            <label>Дата 1</label>
+            <input ng-model="ctrl.date1" />
+        </md-input-container>
+        <md-input-container>
+            <label>Дата 2</label>
+            <input ng-model="ctrl.date2" />
+        </md-input-container>
+    </div>
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>

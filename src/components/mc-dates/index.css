@@ -1,0 +1,36 @@
+.mc-dates, .mc-dates-container, .mc-dates-container-input, .mc-dates-selectors {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.mc-dates, .mc-dates-container-input {
+    flex-direction: column;
+    width: 280px;
+}
+.mc-dates-container-input > div {
+    padding-bottom: 8px;
+}
+.mc-dates-selectors {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.mc-dates-selectors > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.mc-dates-selectors > a:hover {
+    color: red;
+}
+.mc-dates-container-input {
+    height: 44px;
+    justify-content: space-between;
+}
+.md-calendar {
+  font-size: 12px;
+}
+.mc-dates .md-datepicker-input {
+    max-width: 120px;
+}
