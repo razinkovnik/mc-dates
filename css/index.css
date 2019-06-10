@@ -9,10 +9,10 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    width: fit-content;
     flex-direction: column;  
     margin: auto;
     padding-top: 240px;
+    width: max-content;
 }
 .mcdates {
     margin-bottom: 24px;
